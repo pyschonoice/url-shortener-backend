@@ -60,7 +60,7 @@ app.post(
 app.get("/api/:url", validateShortUrlParam, urlController.urlRedirect);
 app.get(
   "/api/analytics/:url",
-  authMiddleware,
+  //authMiddleware,
   validateShortUrlParam,
   urlController.urlAnalytics
 );
